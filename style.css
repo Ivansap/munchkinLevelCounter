@@ -1,0 +1,160 @@
+
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+h1{
+  font-size: 42pt;
+}
+#desk{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  /* max-width: 1200px; */
+text-align: center;
+}
+.card {
+  width: 280px;
+  /* height: 300px; */
+  border-radius: 15px;
+  border-color: #5BC0EB;
+  border-style: solid;
+  border-width: 5px;
+  background-color: #FFF;
+  overflow: hidden;
+
+  display: inline-block;
+}
+
+.card-container{
+  display: inline-block;
+  margin: 10px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.card .power{
+/* padding: 5px; */
+font-size: 36px;
+background-color: white;
+width: 100%;
+padding: 5px;
+font-family: 'Montserrat', sans-serif;;
+font-weight: 700;
+}
+
+
+.card .player .ava {
+  margin: 5px;
+}
+
+.card .player .nickname{
+  font-size: 28px;
+}
+.card .player .gender{
+  font-size: 28px;
+  color: grey;
+}
+.card .player img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.card .list{
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fas.plus:hover{
+  color: #40F99B;
+}
+.fas.minus:hover{
+  color:#DA667B;
+}
+
+.card > .list > .fas{
+  color: grey;
+  cursor: pointer;
+}
+
+
+.add-player-btn{
+  color: blue;
+  cursor: pointer;
+
+}
+.add-player-btn:hover {
+  color: #8a0045;
+}
+
+.gender .fas{
+  margin: 5px;
+}
+
+.active-gender{
+  font-size: 36px;
+  color: black;
+}
+
+.kill-player{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #DA667B;
+  margin-top: -300px;
+  margin-left: -25px;
+  border-radius: 100%;
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.card:hover > .kill-player{
+  display: block;
+}
+
+.delete-card{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: grey;
+  margin-left: -25px;
+  border-radius: 100%;
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+    margin-top: -15px;
+}
+
+.card:hover > .delete-card{
+  display: block;
+}
+.flip-card{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #5BC0EB;
+  margin-left: 240px;
+  border-radius: 100%;
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+    margin-top: -15px;
+}
+
+.card:hover > .flip-card{
+  display: block;
+}
